@@ -1,0 +1,18 @@
+<input
+  type="text"
+  [(ngModel)]="chaine"
+  class="form-control"
+  (keyup)="search()"
+>
+<ol>
+  <li
+    *ngFor="let personne of serachResult"
+    class="list-group-item"
+    (click)="selectPeronne(personne)"
+  >
+    <img src="assets/images/{{personne.path|defaultImage}}"
+         width="25px" height="25px"
+         alt="{{personne.firstname}}">
+    {{personne.firstname|titlecase}} {{personne.name|titlecase}}
+  </li>
+</ol>

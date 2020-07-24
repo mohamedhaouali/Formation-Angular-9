@@ -1,0 +1,15 @@
+<router-outlet></router-outlet>
+<div class="row">
+  <div class="col-md-6 col-sm-3">
+   <app-listecv  (selectedPersonne)="selectPersonne($event)" [personnes]="personnes"></app-listecv>
+  </div>
+  <div class="col-md-6 col-sm-9">
+<app-detail-cv
+  *ngIf="selectedPersonne"
+  [personne]="selectedPersonne"></app-detail-cv>
+  </div>
+</div>
+
+<div class="row">
+<app-embauche></app-embauche>
+</div>

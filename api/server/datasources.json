@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "MedDb": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "anguforma",
+    "password": "",
+    "name": "MedDb",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
